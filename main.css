@@ -1,3 +1,14 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 @font-face {font-family: "League Gothic";
     src: url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.eot");
     src: url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.eot?#iefix") format("embedded-opentype"),
@@ -16,23 +27,25 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 200px;
+  border-bottom: solid 7px rgb(34, 34, 34);
 }
 
-ul {
+nav>ul {
   list-style: none;
-  padding-left: 0px;
-  width: 900px;
+  padding-left: 0;
+  width: 980px;
   margin: auto;
 }
 
-li {
+nav>ul>li {
   color: #fff;
   font-family: "League Gothic", 'Helvetica', sans-serif;
+  font-size: 22px;
+  letter-spacing: 1px;
   display: inline-block;
-  font-size: 25px;
-  height: 100px;
-  line-height: 100px;
-  margin-top: 45px;
+  padding: 5px;
+  box-sizing: content-box;
+  vertical-align: middle;
 }
 
 #restaurants {
@@ -49,6 +62,7 @@ li {
 
 #header-img {
   width: 320px;
+  height: 150px;
   text-align: center;
   background-image: url('images/logo.svg');
   background-position: center;
@@ -56,7 +70,7 @@ li {
   background-size: 300px;
 }
 
-#us {https://atom.io/packages/svg-preview
+#us {
   width: 40px;
 }
 
@@ -76,18 +90,41 @@ li {
 }
 
 .hide {
+  background-color: #373737;
   list-style-type: none;
-  padding: 0px;
+  padding: 5px;
+  margin: -5px;
   position: absolute;
-  top: 0px;
+  top: 100px;
+  width: 200px;
 }
 
 .hide li {
   color: #fff;
-  background-color: #6E6E6E;
+  font-family: Helvetica;
+  font-size: 16px;
+  letter-spacing: normal;
+  padding: 10px 0;
+  background-image: linear-gradient(to right, grey 33%, #373737 0%);
+  background-position: bottom;
+  background-size: 5px 2px;
+  background-repeat: repeat-x;
+}
+
+.hide li:hover {
+  color: rgb(148, 148, 148);
 }
 
 .dropdown:hover .hide {
   display: block;
   position: absolute;
+}
+
+.dropdown:hover {
+  color: #fff;
+  background-color: #373737;
+}
+
+.dropdown:hover a:hover {
+  color: rgb(148, 148, 148);
 }
