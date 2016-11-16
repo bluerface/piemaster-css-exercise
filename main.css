@@ -1,0 +1,93 @@
+@font-face {font-family: "League Gothic";
+    src: url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.eot");
+    src: url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/3bae817a3ffed7db86b763dd7d8004b2.svg#League Gothic") format("svg");
+}
+
+body {
+  background-color: #000;
+}
+
+#main-nav {
+  background-image: url('images/rays.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
+  width: 900px;
+  margin: auto;
+}
+
+li {
+  color: #fff;
+  font-family: "League Gothic", 'Helvetica', sans-serif;
+  display: inline-block;
+  font-size: 25px;
+  height: 100px;
+  line-height: 100px;
+  margin-top: 45px;
+}
+
+#restaurants {
+  width: 110px;
+}
+
+#piepubs {
+  width: 80px;
+}
+
+#pies-and-more {
+  width: 92px;
+}
+
+#header-img {
+  width: 320px;
+  text-align: center;
+  background-image: url('images/logo.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px;
+}
+
+#us {https://atom.io/packages/svg-preview
+  width: 40px;
+}
+
+#events {
+  width: 65px;
+}
+
+#giftshop {
+  width: 85px;
+}
+
+/* ------------------------ DROP DOWN MENU --------------------------
+---------- not really working that well right now.... ---------------*/
+
+.hide {
+  display: none;
+}
+
+.hide {
+  list-style-type: none;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+}
+
+.hide li {
+  color: #fff;
+  background-color: #6E6E6E;
+}
+
+.dropdown:hover .hide {
+  display: block;
+  position: absolute;
+}
